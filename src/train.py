@@ -97,7 +97,7 @@ def main():
 
         mlflow.xgboost.log_model(
             xgb_model=model,
-            artifact_path="xgboost-model"
+            name="xgboost-model"
         )
 
         print("Model training completed successfully")
